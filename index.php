@@ -119,7 +119,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 </div>
                 <div class="about-text-content">
                     <p class="about-text" data-langkey="about_desc">
-                        Saya adalah seorang programmer dan trader yang antusias terhadap teknologi, AI, dan ide-ide produktif. Saya percaya bahwa kombinasi antara logika teknis dan kreativitas visual dapat menciptakan solusi yang berdampak nyata.
+                        I’m a programmer and trader from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.
+
+						Currently, I focus on integrating AI into workflows, developing custom tools, and sharing useful tech content. I believe tech should help people work smarter and solve real problems.
                     </p>
                 </div>
             </div>
