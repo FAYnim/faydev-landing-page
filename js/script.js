@@ -157,4 +157,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     type();
+
+    // Drag to scroll for Skills Carousel
+    const slider = document.querySelector('.skill-grid-wrapper');
+    const pagination = document.querySelector('.carousel-pagination');
+
+    if (slider && pagination) {
+        const itemCount = slider.querySelectorAll('.skill-item').length;
+        const itemsPerPage = 6; // 3 rows * 2 columns
+        const pageCount = Math.ceil(itemCount / itemsPerPage);
+
+        // Create pagination dots
+        for (let i = 0; i < pageCount; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('pagination-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                slider.scrollTo({
+                    left: i * slider.offsetWidth,
+                    behavior: 'smooth'
+                });
+            });
+            pagination.appendChild(dot);
+        }
+
+        const dots = pagination.querySelectorAll('.pagination-dot');
+
+        const updatePagination = () => {
+            const currentPage = Math.round(slider.scrollLeft / slider.offsetWidth);
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentPage);
+            });
+        };
+
+        slider.addEventListener('scroll', updatePagination);
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.cursor = 'grabbing';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; // scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    }
 });

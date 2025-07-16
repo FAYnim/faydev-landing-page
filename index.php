@@ -129,16 +129,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 
         <section id="skills" class="content-section">
             <h2 class="hidden" data-langkey="skills_title">Keahlian (Tech Stack)</h2>
-            <div class="skill-grid">
-                <div class="skill-item hidden">HTML</div>
-                <div class="skill-item hidden">CSS</div>
-                <div class="skill-item hidden">JavaScript</div>
-                <div class="skill-item hidden">PHP</div>
-                <div class="skill-item hidden">MySQL</div>
-                <div class="skill-item hidden">Node.js</div>
-                <div class="skill-item hidden">Git & GitHub</div>
-                <div class="skill-item hidden">MQTT & IoT</div>
-                <div class="skill-item hidden">Canva</div>
+            <div class="skills-carousel-container">
+                <div class="skill-grid-wrapper">
+                    <div class="skill-grid">
+                        <div class="skill-item hidden">HTML</div>
+                        <div class="skill-item hidden">CSS</div>
+                        <div class="skill-item hidden">JavaScript</div>
+                        <div class="skill-item hidden">PHP</div>
+                        <div class="skill-item hidden">MySQL</div>
+                        <div class="skill-item hidden">Node.js</div>
+                        <div class="skill-item hidden">Git & GitHub</div>
+                        <div class="skill-item hidden">MQTT & IoT</div>
+                        <div class="skill-item hidden">Canva</div>
+                    </div>
+                </div>
+                <div class="carousel-pagination"></div>
             </div>
         </section>
 
