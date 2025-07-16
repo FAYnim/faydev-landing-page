@@ -111,9 +111,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 
         <section id="about" class="content-section">
             <h2 class="hidden" data-langkey="about_title">Tentang Saya</h2>
-            <p class="about-text hidden" data-langkey="about_desc">
-                Saya adalah seorang programmer dan trader yang antusias terhadap teknologi, AI, dan ide-ide produktif. Saya percaya bahwa kombinasi antara logika teknis dan kreativitas visual dapat menciptakan solusi yang berdampak nyata.
-            </p>
+            <div class="about-container hidden">
+                <div class="about-photo">
+                    <div class="about-photo-card">
+                        <img src="img/FAY_Motion.png" alt="Foto Profil Faris">
+                    </div>
+                </div>
+                <div class="about-text-content">
+                    <p class="about-text" data-langkey="about_desc">
+                        Saya adalah seorang programmer dan trader yang antusias terhadap teknologi, AI, dan ide-ide produktif. Saya percaya bahwa kombinasi antara logika teknis dan kreativitas visual dapat menciptakan solusi yang berdampak nyata.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="content-section">

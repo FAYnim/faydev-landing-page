@@ -228,11 +228,37 @@ body {
 }
 
 .about-text {
-    text-align: center;
+    text-align: left;
     font-size: 1.1em;
     line-height: 1.7;
-    max-width: 700px;
-    margin: auto;
+    margin: 0;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-photo {
+    flex: 1;
+}
+
+.about-photo-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, .3);
+}
+
+.about-photo-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-text-content {
+    flex: 3;
 }
 
 .skill-grid {
