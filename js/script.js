@@ -218,10 +218,21 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('data/projects.json');
             const projects = await response.json();
+            
+            // Urutkan proyek berdasarkan tanggal update (dupd) terbaru
+            // `sort` akan mengurutkan array `projects`.
+            // `new Date(b.dupd) - new Date(a.dupd)` akan mengurutkan dari tanggal terbaru ke terlama.
+            projects.sort((a, b) => new Date(b.dupd) - new Date(a.dupd));
+
+            // Ambil hanya 4 proyek pertama
+            // `slice(0, 4)` akan mengambil elemen dari indeks 0 hingga sebelum indeks 4 (yaitu 4 elemen pertama).
+            const limitedProjects = projects.slice(0, 4);
+
             const projectContainer = document.querySelector('.portfolio-grid'); // Asumsi ada elemen dengan class ini
 
             if (projectContainer) {
-                projects.forEach(project => {
+                // Gunakan `limitedProjects` yang sudah diurutkan dan dibatasi
+                limitedProjects.forEach(project => {
                     const projectCard = document.createElement('div');
                     projectCard.classList.add('project-card', 'hidden');
 
