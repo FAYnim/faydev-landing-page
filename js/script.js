@@ -227,15 +227,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     let buttonsHtml = '';
                     if (project.demo_url) {
-                        buttonsHtml += `<a href="${project.demo_url}" class="btn" target="_blank"><i class="fas fa-eye"></i> <span data-langkey="btn_demo">Demo</span></a>`;
+                        buttonsHtml += `<a href="${project.demo_url}" class="btn" target="_blank" rel="noreferrer"><i class="fas fa-eye"></i> <span data-langkey="btn_demo">Demo</span></a>`;
                     }
                     if (project.source_code_url) {
-                        buttonsHtml += `<a href="${project.source_code_url}" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>`;
+                        buttonsHtml += `<a href="${project.source_code_url}" class="btn" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>`;
+                    }
+
+                    // Memotong konten jika terlalu panjang, tanpa memotong kata
+                    let displayContent = project.content;
+                    const maxLength = 100;
+
+                    if (displayContent && displayContent.length > maxLength) {
+                        let truncated = displayContent.substring(0, maxLength);
+                        // Cari spasi terakhir sebelum titik potong
+                        let lastSpace = truncated.lastIndexOf(' ');
+
+                        // Jika ada spasi, potong di spasi terakhir
+                        if (lastSpace !== -1) {
+                            displayContent = truncated.substring(0, lastSpace) + '...';
+                        } else {
+                            // Jika tidak ada spasi (kata terlalu panjang), potong langsung
+                            displayContent = truncated + ' ...';
+                        }
                     }
 
                     projectCard.innerHTML = `
                         <h3>${project.title}</h3>
-                        <p>${project.content}</p>
+                        <p>${displayContent}</p>
                         <div class="project-buttons">
                             ${buttonsHtml}
                         </div>
