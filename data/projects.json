@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Artikel 2",
+        "thumbnail": "https:\/\/faydev.my.id\/assets\/img\/FAY_Motion.png",
+        "content": "Hello world",
+        "demo_url": null,
+        "source_code_url": null,
+        "dins": "2025-07-01 12:45:14",
+        "dupd": "2025-07-01 12:45:14",
+        "seq": 2
+    },
+    {
+        "title": "Trading Journal",
+        "thumbnail": null,
+        "content": "<p>Web untuk mencatat trading<\/p>",
+        "demo_url": "https:\/\/faydev.my.id\/demo\/tradingjournal",
+        "source_code_url": "",
+        "dins": "2025-07-19 13:15:07",
+        "dupd": "2025-07-19 13:15:07",
+        "seq": 6
+    }
+]

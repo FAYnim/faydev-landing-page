@@ -212,4 +212,49 @@ document.addEventListener('DOMContentLoaded', () => {
             slider.scrollLeft = scrollLeft - walk;
         });
     }
+
+    // --- Load Proyek dari projects.json ---
+    const loadProjects = async () => {
+        try {
+            const response = await fetch('data/projects.json');
+            const projects = await response.json();
+            const projectContainer = document.querySelector('.portfolio-grid'); // Asumsi ada elemen dengan class ini
+
+            if (projectContainer) {
+                projects.forEach(project => {
+                    const projectCard = document.createElement('div');
+                    projectCard.classList.add('project-card', 'hidden');
+
+                    let buttonsHtml = '';
+                    if (project.demo_url) {
+                        buttonsHtml += `<a href="${project.demo_url}" class="btn" target="_blank"><i class="fas fa-eye"></i> <span data-langkey="btn_demo">Demo</span></a>`;
+                    }
+                    if (project.source_code_url) {
+                        buttonsHtml += `<a href="${project.source_code_url}" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>`;
+                    }
+
+                    projectCard.innerHTML = `
+                        <h3>${project.title}</h3>
+                        <p>${project.content}</p>
+                        <div class="project-buttons">
+                            ${buttonsHtml}
+                        </div>
+                    `;
+                    projectContainer.appendChild(projectCard);
+                });
+
+                // Re-observe hidden elements for scroll reveal after adding new projects
+                const newHiddenElements = document.querySelectorAll('.project-card.hidden');
+                newHiddenElements.forEach((el) => observer.observe(el));
+
+            } else {
+                console.warn("Elemen '.portfolio-grid' tidak ditemukan. Pastikan ada elemen untuk menampung proyek.");
+            }
+
+        } catch (error) {
+            console.error('Gagal memuat data proyek:', error);
+        }
+    };
+
+    loadProjects(); // Panggil fungsi untuk memuat proyek saat DOM siap
 });
