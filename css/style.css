@@ -180,12 +180,20 @@ body {
     text-decoration: none;
     cursor: pointer;
     transition: all .4s ease;
+    display: inline-block; /* Pastikan tombol bisa diatur marginnya */
 }
 .cta-button:hover {
     background: var(--gradient);
     color: var(--bg-color);
     box-shadow: 0 0 20px var(--glow-color);
     border-color: transparent;
+}
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Jarak antar tombol di tampilan mobile */
+    margin-top: 30px;
 }
 
 /* --- Bagian Konten Umum --- */
@@ -419,5 +427,10 @@ body {
     .hero-content h1 {
         font-size: 4em;
         line-height: 1.2;
+    }
+    .hero-buttons {
+        flex-direction: row; /* Tombol bersebelahan di layar besar */
+        justify-content: center;
+        gap: 20px; /* Jarak antar tombol di layar besar */
     }
 }

@@ -105,7 +105,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 <h1 class="hidden" data-langkey="hero_title">Creating content, tools, and tech solutions with AI</h1>
                 <h2 class="role hidden">Faris | <span id="typing-animation"></span><span class="cursor">&nbsp;</span></h2>
                 <p class="tagline hidden" data-langkey="hero_tagline">I enjoy exploring and creating practical tools. Let me assist you with AI, custom tools, and investment insights.</p>
-                <a href="#portfolio" class="cta-button hidden" data-langkey="hero_cta">View Projects</a>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="cta-button hidden" data-langkey="hero_cta">View Projects</a>
+                    <a href="https://lynk.id/faynim" target="_blank" rel="noopener noreferrer" class="cta-button hidden">My Store</a>
+                </div>
             </div>
         </section>
 
