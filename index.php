@@ -176,6 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 <a href="https://www.github.com/FAYnim" target="_blank" rel="noopener noreferrer" title="GitHun FAYnim"><i class="fab fa-github"></i></a>
                 <a href="https://www.instagram.com/faris.a.y" target="_blank" rel="noopener noreferrer" title="Instagram faris.a.y"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.threads.net/@faris.a.y" target="_blank" rel="noopener noreferrer" title="Threads faris.a.y"><i class="fab fa-threads"></i></a>
+                <a href="https://id.linkedin.com/in/faris-ay-212661282" target="_blank" rel="noopener noreferrer" title="LinkedIn Faris A.Y"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </main>
