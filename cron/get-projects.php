@@ -35,6 +35,10 @@ try {
         exit("Gagal menyimpan data ke file JSON.");
     }
 
+	echo $jsonData;
+
+	echo "\n\n";
+
     echo "Data proyek berhasil disimpan ke " . $jsonFilePath;
 
 } catch (Exception $e) {
