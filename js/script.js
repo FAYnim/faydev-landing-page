@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero_tagline': 'Suka ngulik dan bikin tools praktis. Bantu kamu dengan AI, custom tools, dan insight investasi.',
             'hero_cta': 'Lihat Proyek',
             'about_title': 'Tentang Saya',
-            'about_desc': `Saya seorang programmer dan trader dari Indonesia yang tertarik pada teknologi, AI, dan pembuatan alat-alat praktis. Saya senang memadukan logika dan kreativitas untuk menciptakan solusi yang efisien dan berdampak.<br><br>Saat ini, saya fokus pada integrasi AI ke dalam alur kerja, pengembangan alat khusus, dan berbagi konten teknologi yang bermanfaat. Saya percaya teknologi harus membantu orang bekerja lebih cerdas dan memecahkan masalah nyata.`,
+            'about_desc': `Saya seorang programmer dan crypto antusias dari Indonesia yang tertarik pada teknologi, AI, dan pembuatan alat-alat praktis. Saya senang memadukan logika dan kreativitas untuk menciptakan solusi yang efisien dan berdampak.<br><br>Saat ini, saya fokus pada integrasi AI ke dalam alur kerja, pengembangan alat khusus, dan berbagi konten teknologi yang bermanfaat. Saya percaya teknologi harus membantu orang bekerja lebih cerdas dan memecahkan masalah nyata.`,
             'skills_title': 'Keahlian (Tech Stack)',
             'portfolio_title': 'Portfolio',
             'p1_title': 'Aplikasi Jurnal Trading',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'hero_tagline': 'Love exploring and creating practical tools. Let me assist you with AI, custom tools, and investment insights.',
             'hero_cta': 'View Projects',
             'about_title': 'About Me',
-            'about_desc': `I’m a programmer and trader from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.<br><br>Currently, I focus on integrating AI into workflows, developing custom tools, and sharing useful tech content. I believe tech should help people work smarter and solve real problems.`,
+            'about_desc': `I’m a programmer and enthusiast from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.<br><br>Currently, I focus on integrating AI into workflows, developing custom tools, and sharing useful tech content. I believe tech should help people work smarter and solve real problems.`,
             'skills_title': 'Skills (Tech Stack)',
             'portfolio_title': 'Portfolio',
             'p1_title': 'Trading Journal App',
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     changeLanguage('en'); // Set bahasa default
 
     // --- Animasi Mengetik (Typing) ---
-    const words = ["Programmer", "Trader"];
+    const words = ["Programmer", "Crypto Enthusiast", "Content Creator"];
     let i = 0;
     let j = 0;
     let currentWord = "";

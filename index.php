@@ -37,13 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 	<meta name="keywords" content="Faris, programmer, trader, portofolio, web developer, tech, AI, trading, crypto, Node.js, PHP, JavaScript, IoT, MQTT">
 	<meta name="author" content="Faris">
 
-	<meta property="og:title" content="Faris | Programmer & Trader">
+	<meta property="og:title" content="Faris | Programmer & Crypto">
 	<meta property="og:description" content="Portofolio Faris, seorang Programmer dan Trader yang bersemangat dalam teknologi, AI, dan pengembangan solusi digital. Lihat proyek dan keahlian saya di sini.">
 	<meta property="og:image" content="https://faydev.my.id/img/FAY_Motion.png">
 	<meta property="og:url" content="https://faydev.my.id">
 	<meta property="og:type" content="website">
 
-    <title>Faris | Programmer & Trader</title>
+    <title>Faris | Programmer & Crypto Enthusiast</title>
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
       "@type": "Person",
       "name": "Faris",
       "url": "https://faydev.my.id",
-      "jobTitle": ["Programmer", "Trader"],
+      "jobTitle": ["Programmer", "Trader", "Crypto Enthusiast"],
       "sameAs": [
         "https://www.github.com/FAYnim",
         "https://www.instagram.com/faris.a.y",
@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 </div>
                 <div class="about-text-content">
                     <p class="about-text" data-langkey="about_desc">
-                        I’m a programmer and trader from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.
+                        I’m a programmer and crypto enthusiast from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.
 
 						Currently, I focus on integrating AI into workflows, developing custom tools, and sharing useful tech content. I believe tech should help people work smarter and solve real problems.
                     </p>
