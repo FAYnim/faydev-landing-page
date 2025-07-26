@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     type();
 
-    // --- Carousel Keahlian (Drag & Swipe) ---
+    // --- Carousel Keahlian (Drag, Swipe & Auto-Scroll) ---
     const slider = document.querySelector('.skill-grid-wrapper');
     const pagination = document.querySelector('.carousel-pagination');
 
@@ -166,6 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const itemCount = slider.querySelectorAll('.skill-item').length;
         const itemsPerPage = 6; // 3 baris * 2 kolom
         const pageCount = Math.ceil(itemCount / itemsPerPage);
+        let autoScrollInterval;
+
+        // Hapus dot yang mungkin sudah ada untuk menghindari duplikasi
+        pagination.innerHTML = '';
 
         for (let i = 0; i < pageCount; i++) {
             const dot = document.createElement('span');
@@ -186,6 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         slider.addEventListener('scroll', updatePagination);
 
+        const stopAutoScroll = () => {
+            clearInterval(autoScrollInterval);
+        };
+
+        const startAutoScroll = () => {
+            stopAutoScroll(); // Hentikan interval sebelumnya untuk mencegah beberapa interval berjalan bersamaan
+            autoScrollInterval = setInterval(() => {
+                let currentPage = Math.round(slider.scrollLeft / slider.offsetWidth);
+                let nextPage = (currentPage + 1) % pageCount; // Kembali ke 0 jika di akhir
+                slider.scrollTo({ left: nextPage * slider.offsetWidth, behavior: 'smooth' });
+            }, 3000); // Ganti setiap 3 detik
+        };
+
         let isDown = false;
         let startX;
         let scrollLeft;
@@ -195,22 +212,33 @@ document.addEventListener('DOMContentLoaded', () => {
             slider.style.cursor = 'grabbing';
             startX = e.pageX - slider.offsetLeft;
             scrollLeft = slider.scrollLeft;
+            stopAutoScroll(); // Hentikan auto-scroll saat user menekan mouse
         });
+
         slider.addEventListener('mouseleave', () => {
             isDown = false;
             slider.style.cursor = 'grab';
+            startAutoScroll(); // Mulai lagi saat mouse keluar dari area slider
         });
+
         slider.addEventListener('mouseup', () => {
             isDown = false;
             slider.style.cursor = 'grab';
+            // Tidak perlu start di sini, karena akan ditangani oleh mouseleave
         });
+
         slider.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
             const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2;
+            const walk = (x - startX) * 2; // Kecepatan scroll saat drag
             slider.scrollLeft = scrollLeft - walk;
         });
+
+        // Tambahan: Berhenti saat mouse masuk, mulai lagi saat keluar
+        slider.addEventListener('mouseenter', stopAutoScroll);
+
+        startAutoScroll(); // Mulai auto-scroll pertama kali
     }
 
     // --- Load Proyek dari projects.json ---
