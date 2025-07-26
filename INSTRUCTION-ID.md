@@ -61,3 +61,10 @@ Jika Anda tidak ingin menggunakan formulir kontak, Anda bisa menghapus bagian `<
 ## Langkah 8: Unggah ke Server
 
 Setelah semua konfigurasi selesai, unggah semua file dan folder ke server web Anda. Portofolio Anda sekarang sudah online!
+
+## Kredit
+
+Template ini dibuat oleh **FARIS AY**.
+
+-   Instagram: [@faris.a.y](https://www.instagram.com/faris.a.y)
+-   Threads: [@faris.a.y](https://www.threads.net/@faris.a.y)

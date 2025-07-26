@@ -61,3 +61,10 @@ If you do not wish to use the contact form, you can remove the `<form>` section 
 ## Step 7: Upload to Server
 
 After all configurations are complete, upload all files and folders to your web server. Your portfolio should now be online!
+
+## Credits
+
+This template was created by **FARIS AY**.
+
+-   Instagram: [@faris.a.y](https://www.instagram.com/faris.a.y)
+-   Threads: [@faris.a.y](https://www.threads.net/@faris.a.y)

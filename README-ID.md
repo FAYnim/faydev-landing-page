@@ -33,3 +33,10 @@ Template ini adalah halaman portofolio statis yang ringan dan mudah dikonfiguras
 -   **JavaScript (Vanilla)**
 -   **PHP** (hanya untuk formulir kontak)
 -   **Font Awesome** (untuk ikon)
+
+## Kredit
+
+Template ini dibuat oleh **FARIS AY**.
+
+-   Instagram: [@faris.a.y](https://www.instagram.com/faris.a.y)
+-   Threads: [@faris.a.y](https://www.threads.net/@faris.a.y)

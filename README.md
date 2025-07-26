@@ -33,3 +33,10 @@ This template provides a lightweight and easily configurable static portfolio pa
 -   **JavaScript (Vanilla)**
 -   **PHP** (for contact form only)
 -   **Font Awesome** (for icons)
+
+## Credits
+
+This template was created by **FARIS AY**.
+
+-   Instagram: [@faris.a.y](https://www.instagram.com/faris.a.y)
+-   Threads: [@faris.a.y](https://www.threads.net/@faris.a.y)
