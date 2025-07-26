@@ -2,6 +2,10 @@
 
 Follow these steps to configure and personalize this portfolio template. This template is designed as a lightweight static page, with project data stored in a JSON file.
 
+**Important Note on Editable Sections:**
+Throughout the code, you will find comments like `<!-- ============ EDITABLE SECTION START: Section Name ============ -->` and `<!-- ============ EDITABLE SECTION END: Section Name ============ -->` (for HTML/PHP) or `// ============ EDITABLE SECTION START: Section Name ============ ` and `// ============ EDITABLE SECTION END: Section Name ============ ` (for JavaScript).
+These markers indicate areas of the code that are specifically designed for you to modify and personalize. Please refer to these markers when making changes.
+
 ## Step 1: Download and Extract
 
 Download this template's ZIP file and extract it to the folder where you want to store this project.
@@ -19,7 +23,7 @@ For multi-language texts, the `js/script.js` file now uses generic (lorem ipsum)
 
 ## Step 3: Update Portfolio Projects
 
-Open `data/projects.json`. This file contains your project list in JSON format. You can modify existing examples or add new ones using the same format:
+Open `data/projects.json`. This file contains your project list in JSON format. **Important: JSON files do not support comments. Ensure your `projects.json` file is valid JSON without any comments.** You can modify existing examples or add new ones using the same format:
 
 ```json
 {

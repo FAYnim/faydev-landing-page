@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => document.querySelectorAll(selector);
 
+    // ============ EDITABLE SECTION START: Multi-language Texts ============ 
     const langData = {
         'id': {
             'nav_home': 'Beranda',
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'btn_source': 'Source Code'
         }
     };
+    // ============ EDITABLE SECTION END: Multi-language Texts ============
 
     function initSidebar() {
         const menuIcon = $('.menu-icon');
@@ -119,7 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initTypingAnimation() {
-        const words = ["Programmer", "Designer", "Creator"];
+        // ============ EDITABLE SECTION START: Typing Animation Words ============ 
+        const words = ["Make Life Easier", "Solve Problems", "Create Solutions"];
+        // ============ EDITABLE SECTION END: Typing Animation Words ============ 
         let i = 0, j = 0, currentWord = "", isDeleting = false;
         const typingElement = $("#typing-animation");
 

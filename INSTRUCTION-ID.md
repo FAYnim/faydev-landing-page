@@ -2,6 +2,10 @@
 
 Ikuti langkah-langkah di bawah ini untuk mengkonfigurasi dan mempersonalisasi template portofolio ini. Template ini dirancang sebagai halaman statis yang ringan, dengan data proyek disimpan dalam file JSON.
 
+**Catatan Penting tentang Bagian yang Dapat Diedit:**
+Di seluruh kode, Anda akan menemukan komentar seperti `<!-- ============ EDITABLE SECTION START: Nama Bagian ============ -->` dan `<!-- ============ EDITABLE SECTION END: Nama Bagian ============ -->` (untuk HTML/PHP) atau `// ============ EDITABLE SECTION START: Nama Bagian ============ ` dan `// ============ EDITABLE SECTION END: Nama Bagian ============ ` (untuk JavaScript).
+Penanda ini menunjukkan area kode yang secara khusus dirancang untuk Anda modifikasi dan personalisasi. Harap merujuk pada penanda ini saat melakukan perubahan.
+
 ## Langkah 1: Unduh dan Ekstrak
 
 Unduh file template ini dalam format ZIP dan ekstrak ke folder di mana Anda ingin menyimpan proyek ini.
@@ -19,7 +23,7 @@ Untuk teks multi-bahasa, file `js/script.js` sekarang menggunakan teks generik (
 
 ## Langkah 3: Perbarui Proyek Portofolio
 
-Buka file `data/projects.json`. File ini berisi daftar proyek Anda dalam format JSON. Anda bisa mengubah contoh yang ada atau menambahkan yang baru dengan format yang sama:
+Buka file `data/projects.json`. File ini berisi daftar proyek Anda dalam format JSON. **Penting: File JSON tidak mendukung komentar. Pastikan file `projects.json` Anda adalah JSON yang valid tanpa komentar apa pun.** Anda bisa mengubah contoh yang ada atau menambahkan yang baru dengan format yang sama:
 
 ```json
 {

@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- ============ EDITABLE SECTION START: SEO & Metadata ============ -->
 	<meta name="description" content="Portfolio of John Doe, a passionate Programmer and Trader in technology, AI, and digital solutions development. See my projects and skills here.">
 	<meta name="keywords" content="John Doe, programmer, trader, portfolio, web developer, tech, AI, trading, crypto, Node.js, PHP, JavaScript, IoT, MQTT">
 	<meta name="author" content="John Doe">
@@ -44,6 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 	<meta property="og:type" content="website">
 
     <title>John Doe | Programmer & Crypto Enthusiast</title>
+    <!-- ============ EDITABLE SECTION END: SEO & Metadata ============ -->
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -54,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"></noscript>
 
+    <!-- ============ EDITABLE SECTION START: Schema.org Markup ============ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -68,12 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
       ]
     }
     </script>
+    <!-- ============ EDITABLE SECTION END: Schema.org Markup ============ -->
 </head>
 <body>
 
     <header class="header">
         <a href="#hero" class="logo">
-            <img src="" alt="Logo John Doe - Programmer & Trader">
+            <!-- ============ EDITABLE SECTION START: Logo Image ============ -->
+            <img src="https://i.pravatar.cc/300" alt="Logo John Doe - Programmer & Trader">
+            <!-- ============ EDITABLE SECTION END: Logo Image ============ -->
         </a>
         <div class="menu-icon">
             <i class="fas fa-bars"></i>
@@ -102,12 +108,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
+                <!-- ============ EDITABLE SECTION START: Hero Text ============ -->
                 <h1 class="hidden" data-langkey="hero_title">Creating content, tools, and tech solutions with AI</h1>
                 <h2 class="role hidden">John Doe | <span id="typing-animation"></span><span class="cursor">&nbsp;</span></h2>
                 <p class="tagline hidden" data-langkey="hero_tagline">I enjoy exploring and creating practical tools. Let me assist you with AI, custom tools, and investment insights.</p>
+                <!-- ============ EDITABLE SECTION END: Hero Text ============ -->
                 <div class="hero-buttons">
                     <a href="#portfolio" class="cta-button hidden" data-langkey="hero_cta">View Projects</a>
+                    <!-- ============ EDITABLE SECTION START: My Store Link ============ -->
                     <a href="#" target="_blank" rel="noopener noreferrer" class="cta-button hidden">My Store</a>
+                    <!-- ============ EDITABLE SECTION END: My Store Link ============ -->
                 </div>
             </div>
         </section>
@@ -117,15 +127,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
             <div class="about-container hidden">
                 <div class="about-photo">
                     <div class="about-photo-card">
-                        <img src="" alt="Profile Photo John Doe">
+                        <!-- ============ EDITABLE SECTION START: Profile Photo ============ -->
+                        <img src="https://i.pravatar.cc/300" alt="Profile Photo John Doe">
+                        <!-- ============ EDITABLE SECTION END: Profile Photo ============ -->
                     </div>
                 </div>
                 <div class="about-text-content">
+                    <!-- ============ EDITABLE SECTION START: About Text ============ -->
                     <p class="about-text" data-langkey="about_desc">
                         I’m a programmer and crypto enthusiast from Indonesia, passionate about technology, AI, and building practical tools. I enjoy blending logic and creativity to create solutions that are both efficient and impactful.
 
 						Currently, I focus on integrating AI into workflows, developing custom tools, and sharing useful tech content. I believe tech should help people work smarter and solve real problems.
                     </p>
+                    <!-- ============ EDITABLE SECTION END: About Text ============ -->
                 </div>
             </div>
         </section>
@@ -172,12 +186,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 <textarea name="pesan" rows="5" data-langkey="form_message" placeholder="Pesan Anda" required></textarea>
                 <button type="submit" class="cta-button" data-langkey="form_submit">Kirim Pesan</button>
             </form>
+            <!-- ============ EDITABLE SECTION START: Social Links ============ -->
             <div class="social-links hidden">
                 <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub JohnDoe"><i class="fab fa-github"></i></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram johndoe"><i class="fab fa-instagram"></i></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" title="Threads @johndoe"><i class="fab fa-threads"></i></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn John Doe"><i class="fab fa-linkedin"></i></a>
             </div>
+            <!-- ============ EDITABLE SECTION END: Social Links ============ -->
         </section>
     </main>
 
