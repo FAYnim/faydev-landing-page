@@ -1,22 +1,22 @@
 [
     {
-        "title": "Artikel 2",
-        "thumbnail": "https:\/\/faydev.my.id\/assets\/img\/FAY_Motion.png",
-        "content": "Hello world",
-        "demo_url": null,
-        "source_code_url": null,
-        "dins": "2025-07-01 12:45:14",
-        "dupd": "2025-07-01 12:45:14",
-        "seq": 2
+        "title": "Sample Project 1",
+        "thumbnail": "",
+        "content": "This is a sample project description.",
+        "demo_url": "#",
+        "source_code_url": "#",
+        "dins": "2025-07-26 12:00:00",
+        "dupd": "2025-07-26 12:00:00",
+        "seq": 1
     },
     {
-        "title": "Trading Journal",
-        "thumbnail": null,
-        "content": "<p>Web untuk mencatat trading<\/p>",
-        "demo_url": "https:\/\/faydev.my.id\/demo\/tradingjournal",
-        "source_code_url": "",
-        "dins": "2025-07-19 13:15:07",
-        "dupd": "2025-07-19 13:15:07",
-        "seq": 6
+        "title": "Sample Project 2",
+        "thumbnail": "",
+        "content": "<p>Another sample project description.</p>",
+        "demo_url": "#",
+        "source_code_url": "#",
+        "dins": "2025-07-26 12:00:00",
+        "dupd": "2025-07-26 12:00:00",
+        "seq": 2
     }
 ]

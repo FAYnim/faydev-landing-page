@@ -33,17 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<meta name="description" content="Portofolio Faris, seorang Programmer dan Trader yang bersemangat dalam teknologi, AI, dan pengembangan solusi digital. Lihat proyek dan keahlian saya di sini.">
-	<meta name="keywords" content="Faris, programmer, trader, portofolio, web developer, tech, AI, trading, crypto, Node.js, PHP, JavaScript, IoT, MQTT">
-	<meta name="author" content="Faris">
+	<meta name="description" content="Portfolio of John Doe, a passionate Programmer and Trader in technology, AI, and digital solutions development. See my projects and skills here.">
+	<meta name="keywords" content="John Doe, programmer, trader, portfolio, web developer, tech, AI, trading, crypto, Node.js, PHP, JavaScript, IoT, MQTT">
+	<meta name="author" content="John Doe">
 
-	<meta property="og:title" content="Faris | Programmer & Crypto">
-	<meta property="og:description" content="Portofolio Faris, seorang Programmer dan Trader yang bersemangat dalam teknologi, AI, dan pengembangan solusi digital. Lihat proyek dan keahlian saya di sini.">
-	<meta property="og:image" content="https://faydev.my.id/img/FAY_Motion.png">
-	<meta property="og:url" content="https://faydev.my.id">
+	<meta property="og:title" content="John Doe | Programmer & Crypto">
+	<meta property="og:description" content="Portfolio of John Doe, a passionate Programmer and Trader in technology, AI, and digital solutions development. See my projects and skills here.">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
 	<meta property="og:type" content="website">
 
-    <title>Faris | Programmer & Crypto Enthusiast</title>
+    <title>John Doe | Programmer & Crypto Enthusiast</title>
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -58,13 +58,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Faris",
-      "url": "https://faydev.my.id",
+      "name": "John Doe",
+      "url": "",
       "jobTitle": ["Programmer", "Trader", "Crypto Enthusiast"],
       "sameAs": [
-        "https://www.github.com/FAYnim",
-        "https://www.instagram.com/faris.a.y",
-        "https://www.threads.net/@faris.a.y"
+        "https://www.github.com/johndoe",
+        "https://www.instagram.com/johndoe",
+        "https://www.threads.net/@johndoe"
       ]
     }
     </script>
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
 
     <header class="header">
         <a href="#hero" class="logo">
-            <img src="img/FAY_Motion.png" alt="Logo Faris - Programmer & Trader">
+            <img src="" alt="Logo John Doe - Programmer & Trader">
         </a>
         <div class="menu-icon">
             <i class="fas fa-bars"></i>
@@ -103,11 +103,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
         <section id="hero" class="hero-section">
             <div class="hero-content">
                 <h1 class="hidden" data-langkey="hero_title">Creating content, tools, and tech solutions with AI</h1>
-                <h2 class="role hidden">Faris | <span id="typing-animation"></span><span class="cursor">&nbsp;</span></h2>
+                <h2 class="role hidden">John Doe | <span id="typing-animation"></span><span class="cursor">&nbsp;</span></h2>
                 <p class="tagline hidden" data-langkey="hero_tagline">I enjoy exploring and creating practical tools. Let me assist you with AI, custom tools, and investment insights.</p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="cta-button hidden" data-langkey="hero_cta">View Projects</a>
-                    <a href="https://lynk.id/faynim" target="_blank" rel="noopener noreferrer" class="cta-button hidden">My Store</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="cta-button hidden">My Store</a>
                 </div>
             </div>
         </section>
@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
             <div class="about-container hidden">
                 <div class="about-photo">
                     <div class="about-photo-card">
-                        <img src="img/FAY_Motion.png" alt="Foto Profil Faris">
+                        <img src="" alt="Profile Photo John Doe">
                     </div>
                 </div>
                 <div class="about-text-content">
@@ -173,10 +173,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                 <button type="submit" class="cta-button" data-langkey="form_submit">Kirim Pesan</button>
             </form>
             <div class="social-links hidden">
-                <a href="https://www.github.com/FAYnim" target="_blank" rel="noopener noreferrer" title="GitHun FAYnim"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/faris.a.y" target="_blank" rel="noopener noreferrer" title="Instagram faris.a.y"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.threads.net/@faris.a.y" target="_blank" rel="noopener noreferrer" title="Threads faris.a.y"><i class="fab fa-threads"></i></a>
-                <a href="https://id.linkedin.com/in/faris-ay-212661282" target="_blank" rel="noopener noreferrer" title="LinkedIn Faris A.Y"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub JohnDoe"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram johndoe"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Threads @johndoe"><i class="fab fa-threads"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn John Doe"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </main>
