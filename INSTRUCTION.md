@@ -1,52 +1,63 @@
-# Panduan Instalasi & Konfigurasi Template Portofolio
+# Portfolio Template Installation & Configuration Guide
 
-Ikuti langkah-langkah di bawah ini untuk mengkonfigurasi dan mempersonalisasi template portofolio ini.
+Follow these steps to configure and personalize this portfolio template. This template is designed as a lightweight static page, with project data stored in a JSON file.
 
-## Langkah 1: Unduh dan Ekstrak
+## Step 1: Download and Extract
 
-Unduh file template ini dalam format ZIP dan ekstrak ke folder di mana Anda ingin menyimpan proyek ini.
+Download this template's ZIP file and extract it to the folder where you want to store this project.
 
-## Langkah 2: Personalisasi Konten
+## Step 2: Personalize Content
 
-Buka file `index.php` dengan editor teks atau kode favorit Anda. Cari dan ganti teks placeholder berikut:
+Open `index.php` with your favorite text or code editor. Find and replace the following placeholder texts:
 
--   **Nama**: Ganti semua kemunculan `John Doe` dengan nama Anda.
--   **Judul & Deskripsi**: Ubah konten tag `<title>` dan `<meta name="description">` agar sesuai dengan profil Anda.
--   **Tautan Media Sosial**: Di bagian bawah file, cari tautan sosial media dan ganti `#` dengan URL profil Anda yang sebenarnya.
--   **Gambar**: Ganti path gambar di dalam tag `<img>` agar sesuai dengan nama file gambar yang Anda siapkan di folder `img/`.
+-   **Name**: Replace all occurrences of `John Doe` with your name.
+-   **Title & Description**: Modify the content of the `<title>` tag and `<meta name="description">` to match your profile.
+-   **Social Media Links**: At the bottom of the file, find the social media links and replace `#` with your actual profile URLs.
+-   **Images**: Replace the image paths within the `<img>` tags to match the filenames of the images you prepare in the `img/` folder.
 
-## Langkah 3: Perbarui Proyek Portofolio
+For multi-language texts, the `js/script.js` file now uses generic (lorem ipsum) text. You can edit the `langData` section in `js/script.js` to customize translations.
 
-Buka file `data/projects.json`. File ini berisi daftar proyek Anda dalam format JSON. Anda bisa mengubah contoh yang ada atau menambahkan yang baru dengan format yang sama:
+## Step 3: Update Portfolio Projects
+
+Open `data/projects.json`. This file contains your project list in JSON format. You can modify existing examples or add new ones using the same format:
 
 ```json
 {
-  "title": "Nama Proyek Anda",
-  "thumbnail": "img/nama-gambar-proyek.png",
-  "content": "Deskripsi singkat tentang proyek Anda.",
-  "demo_url": "#", // Tautan ke demo langsung
-  "source_code_url": "#" // Tautan ke kode sumber
+  "title": "Your Project Name",
+  "thumbnail": "img/your-project-image.png",
+  "content": "A brief description of your project.",
+  "demo_url": "#", // Link to live demo
+  "source_code_url": "#" // Link to source code
 }
 ```
 
-## Langkah 4: Ganti Gambar
+## Step 4: Replace Images
 
-Buka folder `img/` dan ganti semua gambar di dalamnya dengan gambar Anda sendiri:
+Open the `img/` folder and replace all images within it with your own:
 
--   **Logo**: Ganti file logo.
--   **Foto Profil**: Ganti gambar profil.
--   **Favicon**: Ganti `favicon.ico` dan `apple-touch-icon.png`.
+-   **Logo**: Replace the logo file.
+-   **Profile Photo**: Replace the profile picture.
+-   **Favicon**: Replace `favicon.ico` and `apple-touch-icon.png`.
 
-## Langkah 5 (Opsional): Konfigurasi Formulir Kontak
+## Step 5: JavaScript Configuration (js/script.js)
 
-Formulir kontak di `index.php` memerlukan sedikit konfigurasi di sisi server jika Anda ingin menggunakannya.
+`js/script.js` controls several interactive features and dynamic texts. You can edit it to customize:
 
-1.  **Hosting**: Pastikan hosting Anda mendukung PHP.
-2.  **Skrip Email**: Template ini dirancang untuk bekerja dengan skrip pengirim email (seperti PHPMailer). Anda perlu mengunggah library tersebut ke server Anda dan memastikan path di `index.php` (`$mailerPath`) sudah benar.
-3.  **Alamat Email**: Konfigurasikan skrip email untuk mengirim notifikasi ke alamat email Anda.
+-   **Multi-Language Texts**: Inside `js/script.js`, find the `langData` object. You can change the texts for each language (`id` and `en`) as needed. Ensure to maintain the object structure.
+-   **Typing Animation**: Find the `words` array within the `initTypingAnimation` function. Change the words in this array to customize the text appearing in the hero section's typing animation.
 
-Jika Anda tidak ingin menggunakan formulir kontak, Anda bisa menghapus bagian `<form>` dari `index.php`.
+## Step 6 (Optional): Contact Form Configuration
 
-## Langkah 6: Unggah ke Server
+The contact form in `index.php` requires some server-side configuration if you wish to use it.
 
-Setelah semua konfigurasi selesai, unggah semua file dan folder ke server web Anda. Portofolio Anda sekarang sudah online!
+1.  **Hosting**: Ensure your hosting supports PHP.
+2.  **Email Script**: This template is designed to work with an email sending script (like PHPMailer). You need to upload the library to your server and ensure the path in `index.php` (`$mailerPath`) is correct.
+3.  **Email Address**: Configure the email script to send notifications to your email address.
+
+**Note**: This template no longer uses a database for data storage. All project data is managed via `data/projects.json`.
+
+If you do not wish to use the contact form, you can remove the `<form>` section from `index.php`.
+
+## Step 7: Upload to Server
+
+After all configurations are complete, upload all files and folders to your web server. Your portfolio should now be online!

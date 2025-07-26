@@ -1,35 +1,35 @@
-# Template Landing Page Portofolio Sederhana
+# Simple Portfolio Landing Page Template
 
-Template ini adalah halaman portofolio statis yang ringan dan mudah dikonfigurasi. Dibuat dengan HTML, CSS, dan JavaScript standar, dengan sedikit sentuhan PHP untuk menangani formulir kontak.
+This template provides a lightweight and easily configurable static portfolio page. It's built using standard HTML, CSS, and JavaScript, with a touch of PHP for handling the contact form.
 
-## Struktur Folder
+## Folder Structure
 
 ```
 .
 ├── css/
-│   └── style.css         # File styling utama
+│   └── style.css         # Main styling file
 ├── data/
-│   └── projects.json     # Data proyek portofolio dalam format JSON
+│   └── projects.json     # Portfolio project data in JSON format
 ├── img/
-│   └── ...               # Tempat untuk gambar (logo, foto profil, ikon)
+│   └── ...               # Image assets (logo, profile picture, icons)
 ├── js/
-│   └── script.js         # Logika interaktif (animasi, menu, dll.)
-├── .htaccess             # Konfigurasi server (opsional)
-├── index.php             # Halaman utama
-├── README.md             # Informasi proyek
-└── INSTRUCTION.md        # Panduan instalasi lengkap
+│   └── script.js         # Interactive logic (animations, menu, etc.)
+├── .htaccess             # Server configuration (optional)
+├── index.php             # Main page
+├── README.md             # Project information
+└── INSTRUCTION.md        # Detailed installation guide
 ```
 
-## Konfigurasi Cepat
+## Quick Configuration
 
-1.  **Data Diri**: Buka `index.php` dan ganti semua placeholder seperti "John Doe", judul, deskripsi, dan tautan media sosial dengan data Anda.
-2.  **Data Proyek**: Edit `data/projects.json` untuk menambahkan atau mengubah daftar proyek portofolio Anda.
-3.  **Gambar**: Ganti gambar di dalam folder `img/` dengan gambar Anda sendiri (logo, foto profil, dll). Pastikan nama filenya sesuai dengan yang ada di `index.php`.
+1.  **Personal Information**: Open `index.php` and replace all placeholders like "John Doe", titles, descriptions, and social media links with your own data.
+2.  **Project Data**: Edit `data/projects.json` to add or modify your portfolio project listings.
+3.  **Images**: Replace the images in the `img/` folder with your own (logo, profile picture, etc.). Ensure the filenames match those referenced in `index.php`.
 
 ## Tech Stack
 
 -   **HTML5**
 -   **CSS3**
 -   **JavaScript (Vanilla)**
--   **PHP** (hanya untuk formulir kontak)
--   **Font Awesome** (untuk ikon)
+-   **PHP** (for contact form only)
+-   **Font Awesome** (for icons)
