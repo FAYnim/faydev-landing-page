@@ -1,8 +1,10 @@
-# Simple Portfolio Landing Page Template
+# 🎨 Simple Portfolio Landing Page Template
+
+![Preview](Preview.png)
 
 This template provides a lightweight and easily configurable static portfolio page. It's built using standard HTML, CSS, and JavaScript, with a touch of PHP for handling the contact form.
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```
 .
@@ -20,13 +22,13 @@ This template provides a lightweight and easily configurable static portfolio pa
 └── INSTRUCTION.md        # Detailed installation guide
 ```
 
-## Quick Configuration
+## 🚀 Quick Configuration
 
 1.  **Personal Information**: Open `index.php` and replace all placeholders like "John Doe", titles, descriptions, and social media links with your own data.
 2.  **Project Data**: Edit `data/projects.json` to add or modify your portfolio project listings.
 3.  **Images**: Replace the images in the `img/` folder with your own (logo, profile picture, etc.). Ensure the filenames match those referenced in `index.php`.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 -   **HTML5**
 -   **CSS3**
@@ -34,9 +36,13 @@ This template provides a lightweight and easily configurable static portfolio pa
 -   **PHP** (for contact form only)
 -   **Font Awesome** (for icons)
 
-## Credits
+## ✨ Credits
 
 This template was created by **FARIS AY**.
 
 -   Instagram: [@faris.a.y](https://www.instagram.com/faris.a.y)
 -   Threads: [@faris.a.y](https://www.threads.net/@faris.a.y)
+
+## 🌐 Demo
+
+Check out the live demo here: [faydev.my.id](https://faydev.my.id)
